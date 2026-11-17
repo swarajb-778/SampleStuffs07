@@ -57,6 +57,40 @@ main { max-width:820px; margin:auto; }
 .sd [data-show]{transition:opacity .3s}
 .sd .off{opacity:0}
 .sd .pkt{opacity:0}
+
+/* Keep the demo in dark mode regardless of browser preference. */
+:root {
+  color-scheme: dark;
+  --surface-1: #0f1725;
+  --surface-2: #182437;
+  --border: #3b4c66;
+  --border-strong: #526580;
+  --border-stronger: #879ab5;
+  --border-accent: #81b6ff;
+  --border-success: #5bd8aa;
+  --border-danger: #ff9189;
+  --text-primary: #edf3ff;
+  --text-secondary: #c2cee0;
+  --bg-accent: #203e60;
+  --text-accent: #bfddff;
+  --bg-warning: #48331e;
+  --text-warning: #ffdda5;
+  --bg-success: #1b433d;
+  --text-success: #a5efd2;
+  --bg-danger: #502b33;
+  --text-danger: #ffc0ba;
+  background: #0b111d;
+}
+.sd { background: var(--surface-1); }
+.sd-stage { background-color: #101a2b; }
+.c-blue { --node-fill: #172f4c; --node-stroke: #80b6ff; }
+.c-amber { --node-fill: #3f3023; --node-stroke: #efb868; }
+.c-gray { --node-fill: #233047; --node-stroke: #91a2bb; }
+.c-coral { --node-fill: #442b34; --node-stroke: #f7a08a; }
+.c-teal { --node-fill: #153b36; --node-stroke: #63d6ad; }
+.sd .pkt[fill="#378ADD"] { fill: #7eb9ff; }
+.sd .pkt[fill="#BA7517"] { fill: #f3ba68; }
+.sd .pkt[fill="#1D9E75"] { fill: #5bd9ab; }
 </style>
 </head>
 <body>
